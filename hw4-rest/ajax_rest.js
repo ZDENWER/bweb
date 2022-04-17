@@ -18,11 +18,11 @@ $(document).ready(function () {
             dataType: "json",
             encode: true,
         }).done(function (result) {
-            temp1 = result;
+            $("#result").html('<p>' + result.location.value + '</p>');
             console.log(result);
         });
 
-        $("#result").html('<p>' + result + '</p>');
+        
 
         event.preventDefault();
     });
